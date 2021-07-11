@@ -1,0 +1,31 @@
+name: StickBox
+api: ["1.0.0"]
+version: "1.0.1"
+load: POSTWORLD
+main: yxmingy.stickbox.Main
+commands:
+ '锁':
+  description: "锁箱子"
+  usage: "/锁 （然后点击要锁的箱子)"
+  permission: yxmingy.command.lock
+ '解':
+  description: "解锁箱子"
+  usage: "/解 点击箱子解锁箱子"
+  permission: yxmingy.command.unlock
+ '设计钥匙':
+  description: "用骨头点箱子设定成这个箱子的专属钥匙（用骨头可以直接点开箱子）"
+  usage: "/设计钥匙 （然后用骨头点箱子设定成这个箱子的专属钥匙（用骨头可以直接点开箱子）)"
+  permission: yxmingy.command.setkey
+ '升级箱子':
+  description: "用一定的金锭可以升级箱子（升到三级箱子无法被撬棍敲开）"
+  usage: "/升级箱子 （然后点击要升级的箱子)"
+  permission: yxmingy.command.upbox
+permissions:
+ yxmingy.command.lock:
+  default: true
+ yxmingy.command.unlock:
+  default: true
+ yxmingy.command.setkey:
+  default: true
+ yxmingy.command.upbox:
+  default: true
